@@ -39,7 +39,6 @@ def create_word_dict(filename):
             for word in words:
                 dict_count[word.lower()] = \
                     dict_count.get(word.lower(), 0) + 1
-
     return dict_count
 
 
@@ -59,7 +58,6 @@ def print_top(filename):
     words = sorted(word_count.items(), key=lambda kv: kv[1], reverse=True)
     for k, v in words[:20]:
         print(k, v)
-
     return words
 
 
